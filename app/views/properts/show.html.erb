@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @propert %>
+
+<div>
+  <%= link_to "Edit this propert", edit_propert_path(@propert) %> |
+  <%= link_to "Back to properts", properts_path %>
+
+  <%= button_to "Destroy this propert", @propert, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Properts</h1>
+
+<div id="properts">
+  <% @properts.each do |propert| %>
+    <%= render propert %>
+    <p>
+      <%= link_to "Show this propert", propert %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New propert", new_propert_path %>
